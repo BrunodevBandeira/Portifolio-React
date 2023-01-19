@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$roboto: 'Roboto', sans-serif;
+$mukta: 'Mukta', sans-serif;
+$opa: 'Great Vibes', cursive;
+$cor1: #8e2de2;
+$cor2:#202020;
+
+
+h1, h2 {
+    font-family: $roboto; 
+}
+
+p {
+    font-family: $mukta;
+}
+
+// .asa {
+//     transition: all 1s ease-in-out;
+// }
+
+body {
+    background: url("./assets/space.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
