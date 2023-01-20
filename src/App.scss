@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -28,3 +30,30 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+
+// Variaveis do grid
+$cols: 12;
+$gutter: 20px;
+$large-device: 1200px;
+$medium-device: 760px;
+$small-device: 480px;
+
+
+// Mixin de media-queries
+@mixin d($size) {
+    @if $size == large {
+      @media screen and (min-width: #{$large-device}) {
+        @content;
+      }
+    } @else if $size == medium {
+      @media screen and (min-width: #{$medium-device}) and (max-width: #{$large-device - 1}) {
+        @content;
+      }
+    } @else if $size == small {
+      @media screen and (max-width: #{$medium-device - 1}) {
+        @content;
+      }
+    }
+  }
+

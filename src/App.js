@@ -5,6 +5,7 @@ import Main from "./components/Main";
 const App = ({init}) => {
 
   const [load, setLoad] = React.useState(false);
+  
     React.useEffect(() => {
       setLoad(true);
     }, []);
