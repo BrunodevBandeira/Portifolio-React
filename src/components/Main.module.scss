@@ -2,6 +2,7 @@
 
 $cor: #fff;
 
+
 header {
         // background: $fundo;
         width: 100%;
@@ -13,15 +14,15 @@ header {
         flex-wrap: wrap;
 
         .container {
-            // background: wheat;
-            height: 20rem;
+            // background: purple;
+            height: 25rem;
             max-width: 30rem;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
             
                 .text {
-                    animation: mostrar 1s ease-in-out;
+                    animation: mostrar 1.5s ease-in-out;
                     color: $cor;
                     text-align: center;
                     font-family: $roboto;
@@ -41,17 +42,13 @@ header {
                 .hide {
                     display: none;
                 }
-
-                // .div {
-                //     transition: all 2s ease-in-out;
-                // }
             
                 .contentCima {
                     width: 100%;
                     height: 50%;
-                    
                     border-bottom: 20px solid $cor;
                     transition: all 1s ease-in-out;
+                    transform: translateY(-.1rem);
                 }
 
             .cima {
@@ -59,8 +56,18 @@ header {
                 height: 50%;
                 // background: lightcoral;
                 border-bottom: 20px solid $cor;
-                transform: translateY(-6rem);
                 transition: all 1s ease-in-out;
+                animation: praCima 1s forwards;
+            }
+
+            
+            @keyframes praCima {
+                0% {
+                    transform: translateY(2rem);
+                }
+                100% {
+                    transform: translateY(-2rem);
+                }
             }
 
             .contentBaixo {
@@ -69,6 +76,7 @@ header {
                 // background: red;
                 border-top: 20px solid $cor;
                 transition: all 1s ease-in-out;
+                transform: translateY(.1rem);
             }
 
             .baixo {
@@ -76,9 +84,42 @@ header {
                 height: 50%;
                 // background: cyan;
                 border-top: 20px solid $cor;
-                transform: translateY(6rem);
+                transform: translateY(4rem);
                 transition: all 1s ease-in-out;
+                animation: praBaixo 1s forwards;
             }
+
+
+
+            
+            @keyframes praBaixo {
+                0% {
+                    transform: translateY(-4rem);
+                }
+                100% {
+                    transform: translateY(2rem);
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            animation: mostrar 1.5s ease-in-out;
+            font-family: $mukta;
+        }
+
+
+        .btn {
+            background: rgba(0, 0, 0, .8);
+            width: 100%;
+            height: 2rem;
+            width: 7rem;
+            margin-bottom: .1rem;
+            color: $cor;
+            outline: none;
+            cursor: pointer;
+            border: none;
         }
     }
 

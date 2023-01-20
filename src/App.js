@@ -11,7 +11,6 @@ const App = ({init}) => {
     }, []);
 
   return (
-    // <div className='asa'>
     <div>
        <Main init={load} />
     </div>
