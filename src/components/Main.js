@@ -8,8 +8,6 @@ import Expe from "./Expe";
 
 const Main = ({init}) => {
 
-  // const [ isModalVisible, setIsModalVisible] = React.useState(false);
-
   return (
     <header>
 

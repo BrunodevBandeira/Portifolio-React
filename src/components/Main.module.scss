@@ -13,7 +13,7 @@ header {
         .container {
             // background: purple;
             height: 25rem;
-            max-width: 30rem;
+            max-width: 42rem;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
@@ -43,7 +43,7 @@ header {
                 .contentCima {
                     width: 100%;
                     height: 50%;
-                    border-bottom: 20px solid $cor;
+                    border-bottom: .2rem solid $cor;
                     transition: all 1s ease-in-out;
                     transform: translateY(-.1rem);
                 }
@@ -52,7 +52,7 @@ header {
                 width: 100%;
                 height: 50%;
                 // background: lightcoral;
-                border-bottom: 20px solid $cor;
+                border-bottom: .2rem solid $cor;
                 transition: all 1s ease-in-out;
                 animation: praCima 1s forwards;
             }
@@ -71,7 +71,7 @@ header {
                 width: 100%;
                 height: 50%;
                 // background: red;
-                border-top: 20px solid $cor;
+                border-top: .2rem solid $cor;
                 transition: all 1s ease-in-out;
                 transform: translateY(.1rem);
             }
@@ -80,7 +80,7 @@ header {
                 width: 100%;
                 height: 50%;
                 // background: cyan;
-                border-top: 20px solid $cor;
+                border-top: .2rem solid $cor;
                 transform: translateY(4rem);
                 transition: all 1s ease-in-out;
                 animation: praBaixo 1s forwards;
@@ -106,6 +106,7 @@ header {
             animation: mostrar 1.5s ease-in-out;
             font-family: $mukta;
             z-index: 100;
+            // background: red;
             
             .btn {
                 width: 100%;
@@ -117,8 +118,6 @@ header {
                 background: rgba(0, 0, 0, .8);
                 cursor: pointer;
             }
-
-
         }
     }
 

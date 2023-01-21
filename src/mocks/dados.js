@@ -1,9 +1,9 @@
 export const main = [
     {
-      nome: 'Bruno Bandeira e',
+      nome: 'Bruno Bandeira',
     },
     {
-      nome: 'Amanda Bandeira',
+      nome: 'Desenvolvedor Frontend',
     },
   ];
 

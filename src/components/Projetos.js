@@ -11,7 +11,7 @@ const Projetos = () => {
       <section className="App">
 
         <div>
-          <button className={styles.btn} onClick={() => setIsModalVisible(true)}> Open2 </button>
+          <button className={styles.btn} onClick={() => setIsModalVisible(true)}> Projetos </button>
           {isModalVisible ? (<Modal  onClose={() => {setIsModalVisible(false)}}> 
                                 <h2> 
                               Projetos... 
