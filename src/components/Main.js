@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Main.module.scss";
-import main from "../mocks/dados";
+import { main } from "../mocks/dados";
 import Modal from "./Modal";
 
 const Main = ({init}) => {
@@ -31,9 +31,9 @@ const Main = ({init}) => {
               <button id="opa" className={styles.btn}  onClick={() => setIsModalVisible(true)}> 
                       Sobre 
               </button>
-              {isModalVisible ? (<Modal onClose={() => {setIsModalVisible(false)}}> 
+              {true ? (<Modal onClose={() => {setIsModalVisible(false)}}> 
                                 <h2> 
-                                  lorem lorem lorem lorem lorem lorem lorem  
+                                Formado em Engenharia da computação e pelo prestigiado Bootcamp da Generation Brasil como Desenvolvedor FullStack Java , Atuo na area de desenvolvimento a 2 anos, fui monitor de sala, ajudando os alunos a resolver as listas de algoritmo e estrutura de dados em Java e bando de dados MySQL. Em 2020 conclui meu Bootcamp pelo IGTI e pela Digital Inovation One focados no Frontend para finalizar, escolhi a área de TI pois gosto de desafios, tecnologia, empreendedorismo e da liberdade de criação que essa área tem. 
                                 </h2>
                             </Modal> ): null }
               {/* <button className={styles.btn}> Projetos </button>

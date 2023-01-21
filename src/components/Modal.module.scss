@@ -1,51 +1,62 @@
+$light:  rgb(91, 72, 158);
+$dark:  #1d2671;
+
 .modal {
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 5rem;
+    padding-top: 3.5rem;
+    animation: modal .3s forwards;
+
+    @keyframes modal {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -30px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
 
 
     .containerModal {
-        background-color: #fff;
-        color: #000;
-        width: 60%;
-        height: 60%;
-        border-radius: 20px;
-        text-align: center;
+        background: rgba(0, 0, 0, .9);
+        color: aliceblue;
+        max-width: 55rem;
+        border: 10px solid $light;
+        box-shadow: 0 0 0 10px $dark;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 5rem;
+        // justify-content: center;
+        // align-items: center;
 
         .close {
-            background: transparent;
-            outline: none;
-            width: 32px;
-            height: 32px;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 2.5px;
-                    height:  24px;
-                    background: #000;
-                    transform: rotate(45deg);
-                };
-                
-                
-                &::after  {
-                    content: "";
-                    position: absolute;
-                    width: 2.5px;
-                    height:  24px;
-                    background: #000;
-                    transform: rotate(-45deg);
-                };
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 4px solid $light;
+            top: -30px;
+            right: -30px;
+            position: absolute;
+            background: $dark;
+            box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+            font-size: 1.2rem;
+            color: #fff;
+            cursor: pointer;
         };
     }
 }
-
 
 

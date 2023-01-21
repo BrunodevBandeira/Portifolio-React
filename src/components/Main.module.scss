@@ -105,7 +105,7 @@ header {
             flex-wrap: wrap;
             animation: mostrar 1.5s ease-in-out;
             font-family: $mukta;
-            position: relative;
+            z-index: 100;
             
             .btn {
                 width: 100%;
@@ -117,6 +117,8 @@ header {
                 background: rgba(0, 0, 0, .8);
                 cursor: pointer;
             }
+
+
         }
     }
 
