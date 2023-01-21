@@ -11,7 +11,7 @@ const Sobre = () => {
       <section className={styles.Sobre}>
         <div>
           <button className={styles.btn} onClick={() => setIsModalVisible(true)}> Sobre </button>
-          {true ? (<Modal  onClose={() => {setIsModalVisible(false)}}> 
+          {isModalVisible ? (<Modal  onClose={() => {setIsModalVisible(false)}}> 
                 {sobre.map(({ texto }) => (
                   <div className={styles.sobreContainer}>
                     <h2 className={styles.containerTxt}> {texto} </h2>
