@@ -12,7 +12,7 @@ const Contato = () => {
 
         <div>
           <button className={styles.btn} onClick={() => setIsModalVisible(true)}> Contato </button>
-          {true ? (<Modal  onClose={() => {setIsModalVisible(false)}}> 
+          {isModalVisible ? (<Modal  onClose={() => {setIsModalVisible(false)}}> 
             <div className={styles.contatoContainer}>
               <div className={styles.contatoContainerLeft}>
                   <h1 className={styles.contatoTitle}> Meus <span> Contatos! </span> </h1>
