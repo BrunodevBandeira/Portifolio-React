@@ -12,7 +12,7 @@ const Expe = () => {
 
         <div>
           <button  className={styles.btn} onClick={() => setIsModalVisible(true)}> Experiência </button>
-          {true ? (<Modal  onClose={() => {setIsModalVisible(false)}}> 
+          {isModalVisible ? (<Modal  onClose={() => {setIsModalVisible(false)}}> 
             <section className={styles.modalContainer}>
 
               <div className={styles.modalContainerLeft}>
