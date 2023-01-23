@@ -1,13 +1,13 @@
 .Sobre {
     .btn {
-    height: 2rem;
-    width: 10.5rem;
-    margin-bottom: .1rem;
-    border:.01rem solid #fff;
-    color: #fff;
-    background: rgba(0, 0, 0, .8);
-    cursor: pointer;
-}
+        height: 2rem;
+        width: 10.5rem;
+        margin-bottom: .1rem;
+        border:.01rem solid #fff;
+        color: #fff;
+        background: rgba(0, 0, 0, .8);
+        cursor: pointer;
+    }
 
     .sobreContainer {
         display: flex;
@@ -15,6 +15,7 @@
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
+        // background: red;
         
         .containerTxt {
             color: #fff;
@@ -22,27 +23,28 @@
         }
 
         .containerDownload {
-            padding-top: 1.8rem;
+            padding-top: 2rem;
             // background: teal;
+            margin: 0 auto;
             max-width: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             flex-grow: 1;
             .download {
                 width: 20rem;
                 height: 2rem;
-                background: rgba(255, 255, 255, .7);
+                background: linear-gradient(to right, #16222a, #3a6073);
                 border: none;
                 color: #242424;
                 font-size: 1.1rem;
                 font-weight: 600;
                 transition: all 1s ease-in-out;
                 &:hover {
-                    background: #676d79;
-                    color: rgba(255, 255, 255, 0.193);
+                    border-right: 2px solid #fff;
                 }
-                .opa {
-                    text-decoration: none;
+
+                a {
                     color: #fff;
                 }
                 
@@ -51,18 +53,17 @@
             .perfil {
                 width: 20rem;
                 height: 2rem;
-                background: rgba(255, 255, 255, .7);
+                background: linear-gradient(to left, #16222a, #3a6073);
                 border: none;
                 color: #242424;
                 font-size: 1.1rem;
                 font-weight: 600;
                 transition: all 1s ease-in-out;
                 &:hover {
-                    background: #676d79;
-                    color: #fff;
+                    border-left: 2px solid #fff;
                 }
                 a {
-                    text-decoration: none;
+                    color: #fff;
                 }
             }
         }

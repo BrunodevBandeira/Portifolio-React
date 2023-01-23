@@ -17,9 +17,9 @@ const Sobre = () => {
                     <h2 className={styles.containerTxt}> {texto} </h2>
                     <div className={styles.containerDownload}>
                       <button className={styles.download}> 
-                          <a  className={styles.opa} href="../download/FRONT END-JR - BRUNO BANDEIRA.pdf" download="">Download CV</a> 
+                          <a className={styles.opa} href="../download/FRONT END-JR - BRUNO BANDEIRA.pdf" download="">Download CV</a> 
                         </button>
-                      <button className={styles.perfil} > 
+                      <button className={styles.perfil}> 
                        <a href="https://www.16personalities.com/br/personalidade-entj" target="_blank" > Perfil comportamental </a></button>
                     </div>
                   </div>

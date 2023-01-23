@@ -1,9 +1,106 @@
-.btn {
-    height: 2rem;
-    width: 10.5rem;
-    margin-bottom: .1rem;
-    border: .01rem solid #fff;
-    color: #fff;
-    background: rgba(0, 0, 0, .8);
-    cursor: pointer;
+.Contato {
+    .btn {
+        height: 2rem;
+        width: 10.5rem;
+        margin-bottom: .1rem;
+        border: .01rem solid #fff;
+        color: #fff;
+        background: rgba(0, 0, 0, .8);
+        cursor: pointer;
+    }
+
+
+    .contatoContainer {
+        // background: gold;
+        width: 100%;
+        height: 20rem;
+        display: inline-flex;
+        span {
+            color: #003cff;
+            transition: all 1s ease;
+            &:hover {
+                color: #00ffff;
+            }
+        }
+
+        .contatoContainerLeft {
+            // background: orangered;
+            width: 50%;
+            height: 20rem; 
+            .contatoTitle {
+                font-size: 2.5rem;
+                margin-top: .5rem;
+                margin-left: 1rem;
+             }
+            .contatoP {
+                font-size: 1.5rem;
+                margin-top: .8rem;
+                margin-left: 1rem;
+                font-weight: 300;
+            }
+            .contatoP2 {
+                font-size: 1.3rem;
+                margin-top: 1.2rem;
+                margin-left: 1rem;
+                font-weight: 300;
+                span {
+                    color: #00ffff;
+                    transition: all 1s ease;
+                    &:hover {
+                        color: #003cff;
+                    }
+                }
+            }
+
+            .contatoP3 {
+                font-size: 1rem;
+                margin-top: 1.8rem;
+                margin-left: 1rem;
+                font-weight: 300;
+                span {
+                    color: #003cff;
+                    font-weight: 400;
+                    transition: all 1s ease;
+                    &:hover {
+                        font-weight: 500;
+                        color: #00ffff;
+                    }
+                }
+            }
+
+            .contactIcons {
+                // background: red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-around;
+                a {
+                    margin-top: 1rem;
+                    font-size: 3rem;
+                    color: #fff;
+                    transition: all 1s ease;
+                    &:hover {
+                        color: #003cff;
+                    }
+                }
+            }
+        }
+
+        .contatoContainerRight {
+            width: 50%;
+            height: 20rem; 
+            background: url("../assets/nave.gif");
+            background-size: cover;
+            background-position: center;
+            border-radius: .5rem;
+            border-right: 2px solid #00ffff;
+            transition: all 1s ease;
+            &:hover {
+                border-right: 2px solid #003cff;
+            }
+        }
+    }
 }
+
+
+

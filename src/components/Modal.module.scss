@@ -2,11 +2,11 @@ $light:  rgb(91, 72, 158);
 $dark:  #1d2671;
 
 .modal {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
     z-index: 50;
     background-color: transparent;
     backdrop-filter: blur(5px);
@@ -39,21 +39,22 @@ $dark:  #1d2671;
         flex-direction: column;
         padding: 5rem;
         margin: 0 1rem; 
-
+        
+        
         .close {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            top: -15px;
-            right: -15px;
-            position: absolute;
-            background:  #242424;
-            box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
-            font-size: 1.2rem;
-            color: #fff;
-            cursor: pointer;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          top: -15px;
+          right: -15px;
+          position: absolute;
+          background:  #242424;
+          box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+          font-size: 1.2rem;
+          color: #fff;
+          cursor: pointer;
         };
-
+        
         .content {
           // background: yellow;
           overflow-wrap: break-word;
