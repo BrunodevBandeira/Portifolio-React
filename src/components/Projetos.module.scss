@@ -1,9 +1,22 @@
-.btn {
-    height: 2rem;
-    width: 10.5rem;
-    margin-bottom: .1rem;
-    border: .01rem solid #fff;
-    color: #fff;
-    background: rgba(0, 0, 0, .8);
-    cursor: pointer;
+.portfolio {
+    background: rgba(255, 255, 0, 0.176);
+    width: 100%;
+    height: 100vh;
+
+    .btn {
+        height: 2rem;
+        width: 10.5rem;
+        margin-bottom: .1rem;
+        border: .01rem solid #fff;
+        color: #fff;
+        background: rgba(0, 0, 0, .8);
+        cursor: pointer;
+    }
+
+    .img {
+        max-width: 10rem;
+        max-height: 15rem;
+    }
 }
+
+
