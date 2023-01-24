@@ -19,11 +19,11 @@ header {
             flex-grow: 1;
             
                 .text {
-                    animation: mostrar 1.5s ease-in-out;
                     color: $cor;
                     text-align: center;
                     font-family: $roboto;
                     font-size: 3rem;
+                    animation: mostrar 2.5s ease-in-out;
                 }
 
                 @keyframes mostrar {
@@ -43,8 +43,8 @@ header {
                 .contentCima {
                     width: 100%;
                     height: 50%;
-                    border-bottom: .2rem solid $cor;
-                    transition: all 1s ease-in-out;
+                    border-bottom: .1rem solid $cor;
+                    transition: all 2s ease-in-out;
                     transform: translateY(-.1rem);
                 }
 
@@ -52,8 +52,8 @@ header {
                 width: 100%;
                 height: 50%;
                 // background: lightcoral;
-                border-bottom: .2rem solid $cor;
-                transition: all 1s ease-in-out;
+                border-bottom: .1rem solid $cor;
+                transition: all 2s ease-in-out;
                 animation: praCima 1s forwards;
             }
 
@@ -71,8 +71,8 @@ header {
                 width: 100%;
                 height: 50%;
                 // background: red;
-                border-top: .2rem solid $cor;
-                transition: all 1s ease-in-out;
+                border-top: .1rem solid $cor;
+                transition: all 2s ease-in-out;
                 transform: translateY(.1rem);
             }
 
@@ -80,9 +80,9 @@ header {
                 width: 100%;
                 height: 50%;
                 // background: cyan;
-                border-top: .2rem solid $cor;
+                border-top: .1rem solid $cor;
                 transform: translateY(4rem);
-                transition: all 1s ease-in-out;
+                transition: all 2s ease-in-out;
                 animation: praBaixo 1s forwards;
             }
 
